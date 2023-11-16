@@ -42,6 +42,9 @@ climate:
       - script.execute: addon_climate_update_page_climate
       - script.execute: addon_climate_update_page_home
       - logger.log: Climate state changed - End
+    set_point_minimum_differential: "0.2"
+    heat_deadband: "0.2"
+    heat_overrun: "0"  
 
 globals:
   ##### Is embedded thermostat visible on climate page? #####
