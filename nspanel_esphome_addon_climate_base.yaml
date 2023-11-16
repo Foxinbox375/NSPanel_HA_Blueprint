@@ -34,7 +34,7 @@ climate:
       temperature_step: ${temp_step} ${temp_units}
     idle_action:
       - switch.turn_off: relay_${heater_relay}
-    default_preset: "Off"
+    default_preset: "Home"
     on_boot_restore_from: memory
     internal: false
     on_state:
