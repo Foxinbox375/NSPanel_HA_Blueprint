@@ -44,7 +44,7 @@ climate:
       - logger.log: Climate state changed - End
     set_point_minimum_differential: "0.2"
     heat_deadband: "0.2"
-    heat_overrun: "0"  
+    heat_overrun: "0.1"  
 
 globals:
   ##### Is embedded thermostat visible on climate page? #####
