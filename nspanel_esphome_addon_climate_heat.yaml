@@ -27,10 +27,13 @@ climate:
         default_target_temperature_low: ${temp_min} ${temp_units}
         mode: "off"
       - name: Home
-        default_target_temperature_low: 21.8 ${temp_units}
+        default_target_temperature_low: 22 ${temp_units}
         mode: "heat"
       - name: away
-        default_target_temperature_low: 19 ${temp_units}
-        mode: "heat" 
+        default_target_temperature_low: 19.5 ${temp_units}
+        mode: "heat"
+      - name: sleep 
+        default_target_temperature_low: 21.4 ${temp_units}
+        mode: "heat"
 packages:
   core_package: !include nspanel_esphome_addon_climate_base.yaml
